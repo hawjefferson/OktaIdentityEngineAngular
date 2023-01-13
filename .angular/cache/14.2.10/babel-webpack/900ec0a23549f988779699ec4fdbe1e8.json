@@ -1,0 +1,1 @@
+{"ast":null,"code":"var rules = require('./data/rules');\n\nvar webviewRegExp = new RegExp('(' + rules.join('|') + ')', 'ig');\n\nmodule.exports = function isWebview(ua) {\n  return !!ua.match(webviewRegExp);\n};","map":null,"metadata":{},"sourceType":"script"}
